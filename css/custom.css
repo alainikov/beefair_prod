@@ -1,0 +1,54 @@
+/******************************************************************************\
+ * Project:     Bee Fair
+ * Description: Fair Trade Market
+ * Author:      Arch A. Germann
+ * Document:    Custom css
+\******************************************************************************/
+
+#main
+{
+    display: none;
+}
+
+#splashscreen
+{
+	position: fixed; 
+	top: -50%; 
+	left: -50%; 
+	width: 200%; 
+	height: 200%;
+}
+
+#splashscreenImage
+{
+	position: absolute; 
+	top: 0; 
+	left: 0; 
+	right: 0; 
+	bottom: 0; 
+	margin: auto; 
+	min-width: 50%;
+	min-height: 50%;
+}
+
+.img-responsive
+{
+	display:inline;
+}
+
+.hrBlack
+{
+	border-color: #000000;
+}
+
+.errorSection
+{
+	text-align: center;
+}
+
+.errorContainer
+{
+	width: 100%;
+	padding: 10px;
+	color: #000000;
+}

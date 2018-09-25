@@ -1,0 +1,48 @@
+/******************************************************************************\
+ * Project:     Bee Fair
+ * Description: Fair Trade Market
+ * Author:      Arch A. Germann
+ * Document:    TileView css
+\******************************************************************************/
+
+#tileViewCenter
+{
+    display: table;
+    margin: 0 auto;
+}
+
+#honeyBlogTile
+{
+    display:block;
+    float: left;
+    width: 480px;
+    height: 270px;
+    background: url("../../../img/tileView/honeyBlog.png"); /* no-repeat center center fixed;*/
+    background-size: cover;
+    margin: 20px;
+    /*vertical-align: middle;*/
+}
+
+#treasureMapTile
+{
+    display:block;
+    float: left;
+    width: 480px;
+    height: 270px;
+    background: url("../../../img/tileView/treasureMap.png"); /* no-repeat center center fixed;*/
+    background-size: cover;
+    margin: 20px;
+    /*vertical-align: middle;*/
+}
+
+#locationDataTile
+{
+    display:block;
+    float: left;    
+    width: 480px;
+    height: 270px;
+    background: url("../../../img/tileView/locationData.png"); /* no-repeat center center fixed;*/
+    background-size: cover;
+    margin: 20px;
+    /*vertical-align: middle;*/
+}

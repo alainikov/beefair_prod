@@ -1,0 +1,71 @@
+/******************************************************************************\
+ * Project:     Bee Fair
+ * Description: Fair Trade Market
+ * Author:      Arch A. Germann
+ * Document:    ContactForm css
+\******************************************************************************/
+
+.textBig
+{
+    margin: 5px;
+    font-family: sans-serif;
+    font-size: 16pt;
+}
+
+.textMedium
+{
+    margin: 5px;    
+    font-family: sans-serif;
+    font-size: 14pt;
+}
+
+.textBigCenter
+{
+    text-align: center;
+    margin: 5px;
+    font-family: sans-serif;
+    font-size: 16pt;
+}
+
+.textMediumCenter
+{
+    text-align: center;
+    margin: 5px;    
+	color: #000000;
+    font-family: sans-serif;
+    font-size: 14pt;
+}
+
+.inputBig
+{
+    width: 300px;
+    height: 50px;
+    margin: 5px;
+	color: #000000;
+    font-family: sans-serif;
+    font-size: 16pt;
+}
+
+.inputSubmit, .inputReset
+{
+    text-align: center;
+    width: 300px;
+    height: 50px;
+    margin: 5px;    
+    font-family: sans-serif;
+    font-size: 16pt;
+}
+
+.textareaBig
+{
+    width: 300px;
+    height: 200px;
+    margin: 5px;    
+    font-family: sans-serif;
+    font-size: 16pt;
+}
+
+.control-label
+{
+	font-size: 15pt;
+}
