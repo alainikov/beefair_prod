@@ -1,0 +1,19 @@
+{
+    "deploy": {
+        "targets":
+        [
+            {
+                "type": "local",
+                "name": "My xaampp folder",
+                "description": "A SMB shared network folder",
+                // "dir": "\\\\MyServer\\my_package_files"
+                "dir": "C:\\xampp\\htdocs\\BF"
+            },
+            {
+                "type": "zip",
+                "name": "My ZIP file in xampp",
+                "description": "Create a ZIP file in a target directory",
+                "target": "C:\\xampp\\htdocs\\BF"
+            },
+        ]}
+}
