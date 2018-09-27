@@ -10,12 +10,12 @@ function error()
 	window.location.href = "error.html";
 }
 
+/* ASYNC loading exmaple
 function sleep(ms)
 {
 	return new Promise(resolve => setTimeout(resolve, ms));
 }
 
-/* ASYNC loading exmaple
 async function asyncLoading()
 {
 	console.log('Taking a break...');
