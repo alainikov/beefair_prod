@@ -7,6 +7,7 @@
 \******************************************************************************/
 
 //headers
+header("Access-Control-Allow-Origin: *");
 header("Content:application/json");
 
 //includes
