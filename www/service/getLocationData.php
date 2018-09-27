@@ -15,7 +15,7 @@ require_once (dirname(__FILE__)."/../config/init.php");
 require_once (dirname(__FILE__)."/init.php");
 
 //TODO: set in config
-$title = "Adressverzeichnis"; // <span>FAIRTRADE</span>";
+$title = "Shop Datenbank"; // <span>FAIRTRADE</span>";
 $info = "<p>Hier findest du alle unsere Shops von teils FairTrade bis ganz FairTrade ist von allem was dabei</p>";
 $info .= "<p><font color='#bc1414'>Klicke auf den jeweiligen Shops f&uuml;r detailierte Informationen</font></p>";
 $tableId = "locationDataTable";
