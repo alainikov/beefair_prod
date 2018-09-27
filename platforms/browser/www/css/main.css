@@ -1,0 +1,828 @@
+/******************************************************************************\
+ * Project:     Bee Fair
+ * Description: Fair Trade Market
+ * Author:      Arch A. Germann
+ * Document:    Main css
+\******************************************************************************/
+
+/******************************************************************************\
+ * HOME
+\******************************************************************************/
+.body
+{
+    font-family: sans-serif;
+    background-color: #f8f3f3;
+    /*TODO: cursor -> cursor:url(img/icons/beefair_logo.cur), -moz-zoom-in, auto;*/
+}
+
+.back-to-top
+{
+    position: fixed;
+    bottom:20px;
+    right:20px;
+    padding:1em;
+}
+
+#navMain,
+#navContainer
+{
+    width: 100%;
+    color: #000000; 
+    text-align: center;
+}
+
+#navContainerTop,
+#navBar
+{
+    text-align: center;
+}
+
+/*#carouselMain,
+#carouselList,
+#carouselItem,
+#carouselImage,
+#carouselContainer
+{
+   
+}*/
+
+#carouselCaption
+{
+    height: 300px;
+}
+
+#individualMessageMain
+{
+    text-align: center;
+    min-height: 40px;
+    font-family: Gabriola, Monotype Corsiva; /* Lucida Calligraphy*/
+    font-style: italic;
+    font-size: 26pt;
+    padding: 5px;
+    border-top: 3px solid #000000;
+    border-bottom: 3px solid #000000;
+}
+
+#tileViewMain
+{
+    width: 100%;
+    min-height: 400px;
+    background-color: #f1e8e8; /* #f6e7d9 */
+    text-align: center;
+}
+
+#honeyBlogMain
+{
+	background-color: #f8f3f3;
+    /*width: 90%;
+    margin: 50px auto 50px auto;*/
+}
+
+#treasureMapMain
+{
+    height: 1200px;
+    background-color: #f8f3f3;
+    background: url("../img/treasureMap/treasureMap.png") no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+#locationDataMain
+{
+    width: 90%;
+    text-align: center;
+    margin: 50px auto 50px auto;
+    font-family: sans-serif;
+}
+
+#wantedPosterMain
+{
+    background: url("../img/wantedPoster/background.png") no-repeat center;
+	width: 100%;
+    text-align: center;
+    font-family: sans-serif;
+}
+
+#contactFormMain
+{
+    width: 100%;
+    text-align: center;
+    font-family: sans-serif;
+    background-image: url("../img/contactForm/contactForm.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#aboutUsMain
+{
+    width: 100%;
+    text-align: center;
+    font-family: sans-serif;
+    background-color: #f8f3f3;
+}
+
+.row-left
+{
+    float: left;
+    width: auto;
+    /*border: 1px solid #000000;*/
+}
+
+.row-right
+{
+    float: right;
+    width: auto;
+    /*border: 1px solid #000000;*/
+}
+
+.row-center
+{
+    /*display: inline-block;*/
+    width: 480px;
+    margin: 0 auto;
+}
+
+.row-left, .row-right
+{
+    display: inline-block;
+}
+
+.buttonBigYellow
+{
+	width: 180px;
+	height: 40px;	
+	font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+	box-sizing: border-box;
+	border: 1px solid transparent;
+	font-weight: 400;
+	background-color: #e5c212;
+	border-color: #bfa20f;
+	font-size: 18px;
+	line-height: 1.3333333;
+	border-radius: 6px;
+	text-shadow: none;
+	color: #fff;
+	display: inline-block;
+	text-align: center;
+	white-space: nowrap;
+	vertical-align: middle;
+	touch-action: manipulation;
+}
+
+.buttonBigYellow:hover
+{
+	outline: 0;
+	background-color: #000000;
+}
+
+.buttonBigBlue
+{
+	width: 180px;
+	height: 40px;	
+	font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+	box-sizing: border-box;
+	border: 1px solid transparent;
+	font-weight: 400;
+	background-color: #337ab7;
+	border-color: #2e6da4;
+	font-size: 18px;
+	line-height: 1.3333333;
+	border-radius: 6px;
+	text-shadow: none;
+	color: #fff;
+	display: inline-block;
+	text-align: center;
+	white-space: nowrap;
+	vertical-align: middle;
+	touch-action: manipulation;
+}
+
+.buttonBigBlue:hover
+{
+	outline: 0;
+	background-color: #000000;
+}
+
+.buttonBigGreen
+{
+	width: 180px;
+	height: 40px;	
+	font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+	box-sizing: border-box;
+	border: 1px solid transparent;
+	font-weight: 400;
+	background-color: #0f962e;
+	border-color: #0c7a25;
+	font-size: 18px;
+	line-height: 1.3333333;
+	border-radius: 6px;
+	text-shadow: none;
+	color: #fff;
+	display: inline-block;
+	text-align: center;
+	white-space: nowrap;
+	vertical-align: middle;
+	touch-action: manipulation;
+}
+
+.buttonBigGreen:hover
+{
+	outline: 0;
+	background-color: #000000;
+}
+
+.buttonBigRed
+{
+	width: 180px;
+	height: 40px;	
+	font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+	box-sizing: border-box;
+	border: 1px solid transparent;
+	font-weight: 400;
+	background-color: #bc1414;
+	border-color: #7c0c0c;
+	font-size: 18px;
+	line-height: 1.3333333;
+	border-radius: 6px;
+	text-shadow: none;
+	color: #fff;
+	display: inline-block;
+	text-align: center;
+	white-space: nowrap;
+	vertical-align: middle;
+	touch-action: manipulation;
+}
+
+.buttonBigRed:hover
+{
+	outline: 0;
+	background-color: #000000;
+}
+
+h1
+{
+    font-family: 'HelveticaNeue-UltraLight', 'Helvetica Neue UltraLight', 'Raleway', 'Helvetica Neue', Arial, Helvetica, sans-serif;
+    font-weight: 100;
+    letter-spacing: 1px;
+    font-size: 3.0em;
+    line-height: 1em;
+    color: #000000;
+}
+
+h1 span
+{
+    font-size: 0.5em;
+    line-height: 1em;
+}
+
+h2
+{
+    font-family: 'HelveticaNeue-UltraLight', 'Helvetica Neue UltraLight', 'Raleway', 'Helvetica Neue', Arial, Helvetica, sans-serif;
+    font-weight: 100;
+    letter-spacing: 1px;
+    font-size: 2.5em;
+    line-height: 1em;
+    color: #000000;
+}
+
+h2 span
+{
+    font-size: 0.5em;
+    line-height: 1em;
+}
+
+.aLinkBig
+{
+    font-size: 26pt;
+    font-weight: bold;
+    color: #000000;
+    text-decoration: none;
+    margin: auto;
+    vertical-align: middle;
+}
+
+.aLinkBig:hover
+{
+    font-size: 26pt;
+    font-weight: bold;
+    color: #3d7dec;
+    text-decoration: none;
+    margin: auto;
+    vertical-align: middle;
+}
+
+.entryTitle
+{
+	float: left;
+	width: 50%;
+	height: 30px;
+	padding: 0px 20px 0px 0px;
+	text-align: right;
+}
+
+.entryField
+{
+	float: left;
+	width: 50%;
+	height: 30px;
+	padding: 0px 0px 0px 20px;
+	text-align: left;
+}
+
+.entryText
+{
+	float: left;
+	width: 50%;
+	height: 120px;
+	padding: 0px 0px 0px 20px;
+	text-align: left;
+}
+
+.entryTextarea
+{
+	width: 240px;	
+	height: 115px;
+	resize: none;
+}
+
+
+
+/* #### Mobile Phones Portrait #### */
+@media screen and (max-device-width: 480px) and (orientation: portrait)
+{
+    #test
+    {
+
+    }
+
+    .body,    
+    #navMain,
+    #navContainer,
+    #navContainerTop,
+    #carouselMain,
+    #carouselList,
+    #carouselItem,
+    #carouselImage,
+    #carouselContainer,
+    #individualMessageMain,
+    #tileViewMain,
+    #honeyBlogMain,
+    #treasureMapMain,
+    #locationDataMain,
+    #wantedPosterMain,
+    #contactFormMain,
+    #aboutUsMain,
+    .row-center
+    {
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    #navBar
+    {
+        width: 100%;    
+    }
+    
+    .row-left, .row-right
+    {
+        display: none;        
+    }
+    
+    .row-3
+    {
+        float: left;
+        width: 100%;
+    }
+}
+
+/* #### Mobile Phones Landscape #### */
+@media screen and (max-device-width: 640px) and (orientation: landscape)
+{
+    #test
+    {
+
+    }
+
+    .body,    
+    #navMain,
+    #navContainer,
+    #navContainerTop,
+    #carouselMain,
+    #carouselList,
+    #carouselItem,
+    #carouselImage,
+    #carouselContainer,
+    #individualMessageMain,
+    #tileViewMain,
+    #honeyBlogMain,
+    #treasureMapMain,
+    #locationDataMain,
+    #wantedPosterMain,
+    #contactFormMain,
+    #aboutUsMain,
+    .row-center
+    {
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    #navBar
+    {
+        width: 100%;    
+    }
+    
+    .row-left, .row-right
+    {
+        display: none;        
+    }
+    
+    .row-3
+    {
+        float: left;
+        width: 100%;
+    }
+}
+
+/* #### Mobile Phones Portrait or Landscape #### */
+@media screen and (max-device-width: 640px)
+{
+    #test
+    {
+
+    }
+
+    .body,    
+    #navMain,
+    #navContainer,
+    #navContainerTop,
+    #carouselMain,
+    #carouselList,
+    #carouselItem,
+    #carouselImage,
+    #carouselContainer,
+    #individualMessageMain,
+    #tileViewMain,
+    #honeyBlogMain,
+    #treasureMapMain,
+    #locationDataMain,
+    #wantedPosterMain,
+    #contactFormMain,
+    #aboutUsMain,
+    .row-center
+    {
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    #navBar
+    {
+        width: 100%;    
+    }
+    
+    .row-left, .row-right
+    {
+        display: none;        
+    }
+    
+    .row-3
+    {
+        float: left;
+        width: 100%;
+    }
+}
+
+/* #### iPhone 4+ Portrait or Landscape #### */
+@media screen and (min-device-width: 320px) and (-webkit-min-device-pixel-ratio: 2)
+{
+    #test
+    {
+
+    }
+
+    .body,    
+    #navMain,
+    #navContainer,
+    #navContainerTop,
+    #carouselMain,
+    #carouselList,
+    #carouselItem,
+    #carouselImage,
+    #carouselContainer,
+    #individualMessageMain,
+    #tileViewMain,
+    #honeyBlogMain,
+    #treasureMapMain,
+    #locationDataMain,
+    #wantedPosterMain,
+    #contactFormMain,
+    #aboutUsMain,
+    .row-center
+    {
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    #navBar
+    {
+        width: 100%;    
+    }
+    
+    .row-left, .row-right
+    {
+        display: none;        
+    }
+    
+    .row-3
+    {
+        float: left;
+        width: 100%;
+    }
+}
+
+/* #### iPhone 5 Portrait or Landscape #### */
+@media (device-height: 568px) and (device-width: 320px) and (-webkit-min-device-pixel-ratio: 2)
+{
+    #test
+    {
+
+    }
+
+    .body,    
+    #navMain,
+    #navContainer,
+    #navContainerTop,
+    #carouselMain,
+    #carouselList,
+    #carouselItem,
+    #carouselImage,
+    #carouselContainer,
+    #individualMessageMain,
+    #tileViewMain,
+    #honeyBlogMain,
+    #treasureMapMain,
+    #locationDataMain,
+    #wantedPosterMain,
+    #contactFormMain,
+    #aboutUsMain,
+    .row-center
+    {
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    #navBar
+    {
+        width: 100%;    
+    }
+    
+    .row-left, .row-right
+    {
+        display: none;        
+    }
+    
+    .row-3
+    {
+        float: left;
+        width: 100%;
+    }
+}
+
+/* #### iPhone 6 and 6 plus Portrait or Landscape #### */
+@media (min-device-height: 667px) and (min-device-width: 375px) and (-webkit-min-device-pixel-ratio: 3)
+{
+    #test
+    {
+
+    }
+
+    .body,    
+    #navMain,
+    #navContainer,
+    #navContainerTop,
+    #carouselMain,
+    #carouselList,
+    #carouselItem,
+    #carouselImage,
+    #carouselContainer,
+    #individualMessageMain,
+    #tileViewMain,
+    #honeyBlogMain,
+    #treasureMapMain,
+    #locationDataMain,
+    #wantedPosterMain,
+    #contactFormMain,
+    #aboutUsMain,
+    .row-center
+    {
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    #navBar
+    {
+        width: 100%;    
+    }
+    
+    .row-left, .row-right
+    {
+        display: none;        
+    }
+    
+    .row-3
+    {
+        float: left;
+        width: 100%;
+    }
+}
+
+/* #### Tablets Portrait or Landscape #### */
+@media screen and (min-device-width: 768px) and (max-device-width: 1024px)
+{
+    #test
+    {
+
+    }
+
+    .body,    
+    #navMain,
+    #navContainer,
+    #navContainerTop,
+    #carouselMain,
+    #carouselList,
+    #carouselItem,
+    #carouselImage,
+    #carouselContainer,
+    #individualMessageMain,
+    #tileViewMain,
+    #honeyBlogMain,
+    #treasureMapMain,
+    #locationDataMain,
+    #wantedPosterMain,
+    #contactFormMain,
+    #aboutUsMain,
+    .row-center
+    {
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    #navBar
+    {
+        width: 100%;    
+    }
+    
+    .row-left, .row-right
+    {
+        display: none;        
+    }
+    
+    .row-3
+    {
+        float: left;
+        width: 100%;
+    }
+}
+
+/* #### Desktops #### */
+@media screen and (min-width: 1024px)
+{
+    #test
+    {
+
+    }
+
+    .body,    
+    #navMain,
+    #navContainer,
+    #navContainerTop,
+    #carouselMain,
+    #carouselList,
+    #carouselItem,
+    #carouselImage,
+    #carouselContainer,
+    #individualMessageMain,
+    #tileViewMain,
+    #honeyBlogMain,
+    #treasureMapMain,
+    #locationDataMain,
+    #wantedPosterMain,
+    #contactFormMain,
+    #aboutUsMain,
+    .row-center
+    {
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    #navBar
+    {
+        width: 100%;    
+    }
+    
+    .row-left, .row-right
+    {
+        display: none;        
+    }
+    
+    .row-3
+    {
+        float: left;
+        width: 100%;
+    }
+}
+
+/*@media only screen and (max-width: 768px)
+{
+    #test
+    {
+
+    }
+
+    .body,    
+    #navMain,
+    #navContainer,
+    #navContainerTop,
+    #carouselMain,
+    #carouselList,
+    #carouselItem,
+    #carouselImage,
+    #carouselContainer,
+    #individualMessageMain,
+    #tileViewMain,
+    #honeyBlogMain,
+    #treasureMapMain,
+    #locationDataMain,
+    #wantedPosterMain,
+    #contactFormMain,
+    #aboutUsMain,
+    .row-center
+    {
+        width: 768px;
+        margin: 0 auto;
+    }
+
+    #navBar
+    {
+        width: 100%;    
+    }
+    
+    .row-left, .row-right
+    {
+        display: none;        
+    }
+    
+    .row-3
+    {
+        float: left;
+        width: 100%;
+    }
+}
+
+@media only screen and (max-device-width: 480px)
+{
+    #test
+    {
+
+    }
+
+    .body,    
+    #navMain,
+    #navContainer,
+    #navContainerTop,
+    #carouselMain,
+    #carouselList,
+    #carouselItem,
+    #carouselImage,
+    #carouselContainer,
+    #individualMessageMain,
+    #tileViewMain,
+    #honeyBlogMain,
+    #treasureMapMain,
+    #locationDataMain,
+    #wantedPosterMain,
+    #contactFormMain,
+    #aboutUsMain,
+    .row-center
+    {
+        width: 480px;
+        margin: 0 auto;
+    }
+
+    #navBar
+    {
+        width: 100%;    
+    }
+    
+    .row-left, .row-right
+    {
+        display: none;        
+    }
+    
+    .row-3
+    {
+        float: left;
+        width: 100%;
+    }
+}*/

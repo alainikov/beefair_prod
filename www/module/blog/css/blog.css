@@ -1,0 +1,18 @@
+/******************************************************************************\
+ * Project:     Bee Fair
+ * Description: Fair Trade Market
+ * Author:      Arch A. Germann
+ * Document:    Blog css
+\******************************************************************************/
+
+.honeyBlogSection
+{
+	text-align: center;
+}
+
+.honeyBlogContainer
+{
+	width: 100%;
+	padding: 10px;
+	color: #000000;
+}

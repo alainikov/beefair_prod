@@ -1,0 +1,54 @@
+/******************************************************************************\
+ * Project:     Bee Fair
+ * Description: Fair Trade Market
+ * Author:      Arch A. Germann
+ * Document:    TreasureMap css
+\******************************************************************************/
+
+#treasureMapTop
+{
+	text-align: center;
+	background-color: #FFFFFF;
+	margin: 5px;
+}
+
+#treasureMapOptions
+{
+	height: 60px;
+	color: #000000;
+	background-color: #FFFFFF;
+	text-align: center;
+}
+
+#treasureMapAddNewEntry
+{
+	width: 1200px;
+	height: 60px;
+	padding: 10px 0px 10px 0px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#treasureMapNewEntry
+{
+	display: none;
+	width: 1200px;
+    height: 390px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#treasureMapNewEntryOptions
+{
+	width: 100%;
+	height: 60px;
+}
+
+#treasureMap
+{
+    width: 1200px;
+    height: 900px;
+	margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+}

@@ -1,0 +1,17 @@
+/******************************************************************************\
+ * Project:     Bee Fair
+ * Description: Fair Trade Market
+ * Author:      Arch A. Germann
+ * Document:    LocationData css
+\******************************************************************************/
+
+#locationData
+{
+	margin: 0px 30px 0px 30px;
+}
+
+#locationDataTable
+{
+	cellspacing: 0;
+	width: 100%;
+}
