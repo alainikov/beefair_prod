@@ -13,7 +13,7 @@
     <author href="https://beefair.ch" email="info@beefair.ch">
         BeeFair Team
     </author>
-	<preference name='phonegap-version' value='cli-6.5.0' />	
+	<preference name="phonegap-version" value="cli-6.5.0" />	
 	<!-- /INFO -->
 	
 	<!-- CONTENT -->

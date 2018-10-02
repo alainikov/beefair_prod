@@ -90,7 +90,7 @@ function showTreasureMap(addressMarkers, position, zoom)
         title: 'Du bist hier! (' + position.coords.accuracy + ' Meter Radius)'
     });
 
-    marker.setIcon('http://maps.google.com/mapfiles/ms/icons/green-dot.png');
+    marker.setIcon('https://maps.google.com/mapfiles/ms/icons/green-dot.png');
     
 	var infoWindow = new google.maps.InfoWindow;
 
