@@ -60,8 +60,15 @@
 	<!-- /PLUGINS -->
 	
 	<!-- WHITELIST -->
-    <allow-navigation href="*" />
+	<allow-navigation href="http://*/*" />
+	<allow-navigation href="https://*/*" />
+	<allow-navigation href="data:*" />
+	<allow-intent href="http://*/*" />
+	<allow-intent href="https://*/*" />
+	<access origin="http://*.beefair.ch" />
+	<access origin="https://*.beefair.ch" />
+    <!--<allow-navigation href="*" />
     <allow-intent href="*" />
-	<access origin="*" /> <!-- Required for iOS9 -->	
+	<access origin="*" />--> <!-- Required for iOS9 -->	
 	<!-- /WHITELIST -->
 </widget>
