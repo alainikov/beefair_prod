@@ -170,7 +170,7 @@ $(document).ready(function()
 			
 		}*/
 		
-		$("#btnAddNewEntry").click(function()
+		/*$("#btnAddNewEntry").click(function()
 		{
 			var newTreasureMapMessageHeight = treasureMapMessageHeight;
 			var treasureMapMessage = "";
@@ -208,11 +208,7 @@ $(document).ready(function()
 				newTreasureMapMessageHeight += 20;
 			}
 			
-			/*if (treasureMapEmail == null || treasureMapEmail === "" || treasureMapEmail.match(/^[A-Za-z0-9._%-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,4}$/) == null)
-			{
-				treasureMapMessage += "<font color='#bc1414'><b>Das Feld 'Email' ist ung&uuml;ltig.</b></font><br />";
-				newTreasureMapMessageHeight += 20;
-			}*/
+			//Email check: treasureMapEmail.match(/^[A-Za-z0-9._%-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,4}$/) == null)
 			
 			if (treasureMapCountry == null || treasureMapCountry === "" || treasureMapCountry == 0 || !$.isNumeric(treasureMapCountry))
 			{
@@ -278,7 +274,7 @@ $(document).ready(function()
 				$("#treasureMapMessage").html(treasureMapMessage);
 				treasureMapMessageSetHeight(newTreasureMapMessageHeight);
 			}
-		});
+		});*/
 	}).error(function()
 	{ 
 		error(); 
