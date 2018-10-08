@@ -170,7 +170,7 @@ $(document).ready(function()
 			
 		}*/
 		
-		/*$("#btnAddNewEntry").click(function()
+		$("#btnAddNewEntry").click(function()
 		{
 			var newTreasureMapMessageHeight = treasureMapMessageHeight;
 			var treasureMapMessage = "";
@@ -274,7 +274,7 @@ $(document).ready(function()
 				$("#treasureMapMessage").html(treasureMapMessage);
 				treasureMapMessageSetHeight(newTreasureMapMessageHeight);
 			}
-		});*/
+		});
 	}).error(function()
 	{ 
 		error(); 
