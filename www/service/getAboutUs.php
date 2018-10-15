@@ -14,10 +14,10 @@ header("Content:application/json");
 require_once (dirname(__FILE__)."/../config/init.php");
 require_once (dirname(__FILE__)."/init.php");
 
-$aboutUs = 	'<br><br><br><br>';
-$aboutUs .= '<p class="textBig">Unser Ziel ist es eine Orientierungsm&ouml;glickeit f&uuml;r einen humanen und &ouml;kologischen Einkauf zu schaffen.<br><br>';
-$aboutUs .= 'Eure BEEFAIR-FREUNDE</p>';
-$aboutUs .= '<br><br><br><br>';
+$aboutUs = '<blockquote>';
+$aboutUs .=  '<p>Unser Ziel ist es eine Orientierungsm&ouml;glickeit f&uuml;r einen humanen und &ouml;kologischen Einkauf zu schaffen.</p>';
+$aboutUs .= '<footer>Eure BEEFAIR-FREUNDE</footer>';
+$aboutUs .= '</blockquote>';
 
 $data = array("AboutUs" => $aboutUs);
 
