@@ -99,7 +99,6 @@
 #tileViewMain
 {
     width: 100%;
-    min-height: 400px;
     background-color: #f1e8e8; /* #f6e7d9 */
     text-align: center;
 }
