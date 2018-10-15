@@ -63,4 +63,17 @@
     margin: 5px;    
     font-family: sans-serif;
     font-size: 16pt;
+<<<<<<< HEAD:platforms/browser/www/module/contactForm/css/contactForm.css
+=======
+}
+
+.control-label
+{
+	font-size: 15pt;
+}
+
+.form-horizontal .form-group {
+    margin-right: 0px;
+    margin-left: 0px;
+>>>>>>> MBA:module/contactForm/css/contactForm.css
 }
