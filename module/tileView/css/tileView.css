@@ -15,9 +15,7 @@
 {
     display:block;
     float: left;
-    max-width: 100%;
-    /* width: 480px; */
-    /* height: 270px; */
+    min-width: 350px;
     background: url("../../../img/tileView/honeyBlog.png"); /* no-repeat center center fixed;*/
     background-size: cover;
     margin: 20px;
@@ -29,9 +27,7 @@
 {
     display:block;
     float: left;
-    max-width: 100%;
-    /* width: 480px; */
-    /* height: 270px; */
+    min-width: 350px;
     background: url("../../../img/tileView/treasureMap.png"); /* no-repeat center center fixed;*/
     background-size: cover;
     margin: 20px;
@@ -43,9 +39,7 @@
 {
     display:block;
     float: left;       
-    max-width: 100%;
-    /* width: 480px; */
-    /* height: 270px; */
+    min-width: 350px;
     background: url("../../../img/tileView/locationData.png"); /* no-repeat center center fixed;*/
     background-size: cover;
     margin: 20px;

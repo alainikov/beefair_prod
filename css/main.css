@@ -259,7 +259,11 @@
 	text-align: center;
 	white-space: nowrap;
 	vertical-align: middle;
-	touch-action: manipulation;
+    touch-action: manipulation;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-top: 5px;
+    margin-bottom: 5px;
 }
 
 .buttonBigGreen:hover
@@ -287,7 +291,11 @@
 	text-align: center;
 	white-space: nowrap;
 	vertical-align: middle;
-	touch-action: manipulation;
+    touch-action: manipulation;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-top: 5px;
+    margin-bottom: 5px;
 }
 
 .buttonBigRed:hover
