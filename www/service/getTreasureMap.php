@@ -23,9 +23,6 @@ $treasureMap = '<form name="frmTreasureMap">';
 $treasureMap .= '<div id="treasureMapTop">';
 $treasureMap .= 	'<h1>Schatzkarte</h1>';
 $treasureMap .= 	'<p>Ermittle deine Position: <span id="treasureMapStatus">suchen...</span></p>';
-$treasureMap .= 	'<div id="treasureMapMessage"></div>';
-$treasureMap .= '</div>';
-$treasureMap .= '<div id="treasureMapOptions">';
 $treasureMap .= 	'<div id="treasureMapAddNewEntry">';
 $treasureMap .= 		'<input type="button" class="buttonBigYellow" id="btnShowNewEntry" value="Neuer Eintrag" />';
 $treasureMap .= 	'</div>';
@@ -85,16 +82,14 @@ $treasureMap .= 		'<div class="entryTitle">Email:</div><div class="entryField"><
 $treasureMap .= 		'<div class="entryTitle">Website:</div><div class="entryField"><input type="text" id="txtTreasureMapWebsite" value="" /></div>';
 $treasureMap .= 		'<div class="entryTitle">Breitengrad:</div><div class="entryField"><input type="number" id="txtTreasureMapLatitude" step="0.1" value="0" /></div>';
 $treasureMap .= 		'<div class="entryTitle">Längengrad:</div><div class="entryField"><input type="number" id="txtTreasureMapLongitude" step="0.1" value="0" /></div>';
-$treasureMap .= 		'<div id="treasureMapNewEntryOptions">';
-$treasureMap .= 			'<input type="button" class="buttonBigGreen" id="btnAddNewEntry" value="Hinzufügen" />&nbsp;&nbsp;&nbsp;';
+$treasureMap .= 		'<div id="treasureMapMessage"></div>';
+$treasureMap .=			'<input type="button" class="buttonBigGreen" id="btnAddNewEntry" value="Hinzufügen" />';
 //$treasureMap .= 			'<input type="reset" class="buttonBigRed" id="btnResetNewEntry" value="Leeren" />';
-$treasureMap .= 			'<input type="reset" class="buttonBigRed" value="Leeren" />';
-$treasureMap .= 		'</div>';
+$treasureMap .=			'<input type="reset" class="buttonBigRed" value="Leeren" />';
 $treasureMap .= 	'</div>';
 $treasureMap .= '</div>';
 $treasureMap .= '</form>';
 $treasureMap .= '<div id="treasureMap"></div>';
-$treasureMap .= '<br /><br />';
 
 $data = array("TreasureMap" => $treasureMap);
 

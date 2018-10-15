@@ -34,11 +34,12 @@ function treasureMapShowNewEntry()
 
 function treasureMapMessageSetHeight(newMessageHeight)
 {
-	var newTopHeight = treasureMapTopHeight + newMessageHeight;
-	var newOptionsHeight = document.getElementById('treasureMapOptions').offsetHeight;
-	var newMainHeight = treasureMapMainHeight + newTopHeight + newOptionsHeight;
-	
 	//MBA unneeded code
+	// var newTopHeight = treasureMapTopHeight + newMessageHeight;
+	// var newOptionsHeight = document.getElementById('treasureMapOptions').offsetHeight;
+	// var newMainHeight = treasureMapMainHeight + newTopHeight + newOptionsHeight;
+	
+	
 	// document.getElementById('treasureMapMessage').style.height = newMessageHeight + "px";
 	// document.getElementById('treasureMapTop').style.height = newTopHeight + "px";
 	//treasureMapMainSetHeight(newMainHeight);
