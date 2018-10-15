@@ -15,11 +15,13 @@
 {
     display:block;
     float: left;
-    width: 480px;
-    height: 270px;
+    max-width: 100%;
+    /* width: 480px; */
+    /* height: 270px; */
     background: url("../../../img/tileView/honeyBlog.png"); /* no-repeat center center fixed;*/
     background-size: cover;
     margin: 20px;
+    padding: 50px;
     /*vertical-align: middle;*/
 }
 
@@ -27,22 +29,26 @@
 {
     display:block;
     float: left;
-    width: 480px;
-    height: 270px;
+    max-width: 100%;
+    /* width: 480px; */
+    /* height: 270px; */
     background: url("../../../img/tileView/treasureMap.png"); /* no-repeat center center fixed;*/
     background-size: cover;
     margin: 20px;
+    padding: 50px;
     /*vertical-align: middle;*/
 }
 
 #locationDataTile
 {
     display:block;
-    float: left;    
-    width: 480px;
-    height: 270px;
+    float: left;       
+    max-width: 100%;
+    /* width: 480px; */
+    /* height: 270px; */
     background: url("../../../img/tileView/locationData.png"); /* no-repeat center center fixed;*/
     background-size: cover;
     margin: 20px;
+    padding: 50px;
     /*vertical-align: middle;*/
 }
