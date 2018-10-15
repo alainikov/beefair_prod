@@ -21,7 +21,6 @@ $countryList = $countryCtrl->getCountryList();
 
 $treasureMap = '<form name="frmTreasureMap">';
 $treasureMap .= '<div id="treasureMapTop">';
-$treasureMap .= 	'<br /><br />';
 $treasureMap .= 	'<h1>Schatzkarte</h1>';
 $treasureMap .= 	'<p>Ermittle deine Position: <span id="treasureMapStatus">suchen...</span></p>';
 $treasureMap .= 	'<div id="treasureMapMessage"></div>';

@@ -27,8 +27,9 @@ function treasureMapShowNewEntry()
 	
 	var newMainHeight = treasureMapMainHeight + newTopHeight + newOptionsHeight;
 	
-	document.getElementById('treasureMapOptions').style.height = newOptionsHeight + "px";
-	treasureMapMainSetHeight(newMainHeight);
+	//MBA unneeded code
+	//document.getElementById('treasureMapOptions').style.height = newOptionsHeight + "px";
+	//treasureMapMainSetHeight(newMainHeight);
 }
 
 function treasureMapMessageSetHeight(newMessageHeight)
@@ -37,9 +38,10 @@ function treasureMapMessageSetHeight(newMessageHeight)
 	var newOptionsHeight = document.getElementById('treasureMapOptions').offsetHeight;
 	var newMainHeight = treasureMapMainHeight + newTopHeight + newOptionsHeight;
 	
-	document.getElementById('treasureMapMessage').style.height = newMessageHeight + "px";
-	document.getElementById('treasureMapTop').style.height = newTopHeight + "px";
-	treasureMapMainSetHeight(newMainHeight);
+	//MBA unneeded code
+	// document.getElementById('treasureMapMessage').style.height = newMessageHeight + "px";
+	// document.getElementById('treasureMapTop').style.height = newTopHeight + "px";
+	//treasureMapMainSetHeight(newMainHeight);
 }
 
 function initMap()
