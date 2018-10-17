@@ -24,7 +24,9 @@ $menu .=					'<button type="button" class="navbar-toggle collapsed" data-toggle=
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </button>';
-$menu .=  					'<a class="navbar-brand" href="'.$labels["menu"][0]["url"].'">'.$labels["menu"][0]["name"].'</a>';
+$menu .=  					'<a class="navbar-brand" href="'.$labels["menu"][0]["url"].'">';
+$menu .=  					'<img src="../www/img/logo/logo_transparent.png" width="90"/>';
+$menu .= 				'</a>';
 $menu .=  				'</div>';
 $menu .=  				'<div id="navBar" class="navbar-collapse collapse">';
 $menu .=  					'<ul class="nav navbar-nav">';

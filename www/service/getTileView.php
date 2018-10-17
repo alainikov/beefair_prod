@@ -14,11 +14,11 @@ header("Content:application/json");
 require_once (dirname(__FILE__)."/../config/init.php");
 require_once (dirname(__FILE__)."/init.php");
 
-$tileView = 	'<div id="tileViewCenter">';
-$tileView .= 		'<a class="aLinkBig" id="honeyBlogTile" href="#honeyBlogMain">Honey Blog</a>';
+// $tileView = 	'<div id="tileViewCenter">';
+$tileView = 		'<a class="aLinkBig" id="honeyBlogTile" href="#honeyBlogMain">Honey Blog</a>';
 $tileView .= 		'<a class="aLinkBig" id="treasureMapTile" href="#treasureMapMain">Schatzkarte</a>';
 $tileView .= 		'<a class="aLinkBig" id="locationDataTile" href="#locationDataMain">Adressverzeichnis</a>';
-$tileView .= 	'</div>';
+//$tileView .= 	'</div>';
 
 $data = array("TileView" => $tileView);
 

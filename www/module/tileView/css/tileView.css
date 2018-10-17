@@ -5,44 +5,59 @@
  * Document:    TileView css
 \******************************************************************************/
 
-#tileViewCenter
-{
-    display: table;
-    margin: 0 auto;
+/*small devices (vertical phone, 375 and up */
+@media (min-width: 375px) { 
+   
 }
+
+/* Small devices (landscape phones, 576px and up)*/
+@media (max-width: 576px) { 
+    #honeyBlogTile {
+        min-width: 100% !important;
+        margin: 0px !important;
+    }
+    #treasureMapTile{
+        min-width: 100% !important;
+        margin: 0px !important;
+    }
+    #locationDataTile{
+        min-width: 100% !important;
+        margin: 0px !important;
+    }
+ }
+
+/* Medium devices (tablets, 768px and up)*/
+@media (min-width: 768px) { 
+
+ }
+
 
 #honeyBlogTile
 {
-    display:block;
-    float: left;
+    display: inline-block;
     min-width: 407px;
     background: url("../../../img/tileView/honeyBlog.png"); /* no-repeat center center fixed;*/
     background-size: cover;
     margin: 20px;
     padding: 50px;
-    /*vertical-align: middle;*/
 }
 
 #treasureMapTile
 {
-    display:block;
-    float: left;
+    display: inline-block;
     min-width: 407px;
     background: url("../../../img/tileView/treasureMap.png"); /* no-repeat center center fixed;*/
     background-size: cover;
     margin: 20px;
     padding: 50px;
-    /*vertical-align: middle;*/
 }
 
 #locationDataTile
 {
-    display:block;
-    float: left;       
+    display:inline-block;    
     min-width: 407px;
     background: url("../../../img/tileView/locationData.png"); /* no-repeat center center fixed;*/
     background-size: cover;
     margin: 20px;
     padding: 50px;
-    /*vertical-align: middle;*/
 }
