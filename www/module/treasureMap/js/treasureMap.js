@@ -7,13 +7,13 @@
 
 function treasureMapMainSetHeight(newMainHeight)
 {
-	document.getElementById('treasureMapMain').style.height = newMainHeight + "px";
+	// document.getElementById('treasureMapMain').style.height = newMainHeight + "px";
 }
 
 function treasureMapShowNewEntry()
 {
-	var newTopHeight = document.getElementById('treasureMapTop').offsetHeight;
-	var newOptionsHeight = treasureMapOptionsHeight;
+	// var newTopHeight = document.getElementById('treasureMapTop').offsetHeight;
+	// var newOptionsHeight = treasureMapOptionsHeight;
 	
 	if (document.getElementById('treasureMapNewEntry').style.display == "block")
 	{
@@ -21,25 +21,28 @@ function treasureMapShowNewEntry()
 	}
 	else
 	{
-		newOptionsHeight += treasureMapNewEntryHeight;
+		// newOptionsHeight += treasureMapNewEntryHeight;
 		document.getElementById('treasureMapNewEntry').style.display = "block";
 	}
 	
-	var newMainHeight = treasureMapMainHeight + newTopHeight + newOptionsHeight;
+	// var newMainHeight = treasureMapMainHeight + newTopHeight + newOptionsHeight;
 	
-	document.getElementById('treasureMapOptions').style.height = newOptionsHeight + "px";
-	treasureMapMainSetHeight(newMainHeight);
+	//MBA unneeded code
+	//document.getElementById('treasureMapOptions').style.height = newOptionsHeight + "px";
+	//treasureMapMainSetHeight(newMainHeight);
 }
 
 function treasureMapMessageSetHeight(newMessageHeight)
 {
-	var newTopHeight = treasureMapTopHeight + newMessageHeight;
-	var newOptionsHeight = document.getElementById('treasureMapOptions').offsetHeight;
-	var newMainHeight = treasureMapMainHeight + newTopHeight + newOptionsHeight;
+	//MBA unneeded code
+	// var newTopHeight = treasureMapTopHeight + newMessageHeight;
+	// var newOptionsHeight = document.getElementById('treasureMapOptions').offsetHeight;
+	// var newMainHeight = treasureMapMainHeight + newTopHeight + newOptionsHeight;
 	
-	document.getElementById('treasureMapMessage').style.height = newMessageHeight + "px";
-	document.getElementById('treasureMapTop').style.height = newTopHeight + "px";
-	treasureMapMainSetHeight(newMainHeight);
+	
+	// document.getElementById('treasureMapMessage').style.height = newMessageHeight + "px";
+	// document.getElementById('treasureMapTop').style.height = newTopHeight + "px";
+	//treasureMapMainSetHeight(newMainHeight);
 }
 
 function initMap()

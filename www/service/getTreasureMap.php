@@ -19,23 +19,18 @@ $shopTypeList = $shopTypeCtrl->getShopTypeList();
 $categoryList = $categoryCtrl->getMainCategoryList();
 $countryList = $countryCtrl->getCountryList();
 
-$treasureMap = '<form name="frmTreasureMap">';
-$treasureMap .= '<div id="treasureMapTop">';
-$treasureMap .= 	'<br /><br />';
+$treasureMap = '<div id="treasureMapTop">';
 $treasureMap .= 	'<h1>Schatzkarte</h1>';
 $treasureMap .= 	'<p>Ermittle deine Position: <span id="treasureMapStatus">suchen...</span></p>';
-$treasureMap .= 	'<div id="treasureMapMessage"></div>';
-$treasureMap .= '</div>';
-$treasureMap .= '<div id="treasureMapOptions">';
 $treasureMap .= 	'<div id="treasureMapAddNewEntry">';
 $treasureMap .= 		'<input type="button" class="buttonBigYellow" id="btnShowNewEntry" value="Neuer Eintrag" />';
 $treasureMap .= 	'</div>';
-$treasureMap .= 	'<div id="treasureMapNewEntry">';
-$treasureMap .= 		'<div class="entryTitle">';
-$treasureMap .= 			'Shop-Typ:';
-$treasureMap .= 		'</div>';
-$treasureMap .= 		'<div class="entryField">';
-$treasureMap .= 			'<select id="selTreasureMapShopType">';
+
+$treasureMap .= 	'<form id="treasureMapNewEntry">';
+$treasureMap .=			'<div class="col-md-3">';
+$treasureMap .=			'<div class="form-group">';
+$treasureMap .= 			'<label>Shop-Typ:</label>';
+$treasureMap .= 			'<select id="selTreasureMapShopType" class="form-control">';
 
 $treasureMap .= 				'<option value="0" selected>-- Bitte ausw&auml;hlen --</option>';
 
@@ -46,11 +41,12 @@ foreach($shopTypeList as $shopType)
 
 $treasureMap .= 			'</select>';
 $treasureMap .= 		'</div>';
-$treasureMap .= 		'<div class="entryTitle">';
-$treasureMap .= 			'Kategorie:';
 $treasureMap .= 		'</div>';
-$treasureMap .= 		'<div class="entryField">';
-$treasureMap .= 			'<select id="selTreasureMapCategory">';
+
+$treasureMap .=			'<div class="col-md-3">';
+$treasureMap .=			'<div class="form-group">';
+$treasureMap .= 			'<label>Kategorie:</label>';
+$treasureMap .= 			'<select id="selTreasureMapCategory" class="form-control">';
 $treasureMap .= 				'<option value="0" selected>-- Bitte ausw&auml;hlen --</option>';
 
 foreach($categoryList as $category)
@@ -60,16 +56,18 @@ foreach($categoryList as $category)
 
 $treasureMap .= 			'</select>';
 $treasureMap .= 		'</div>';
-$treasureMap .= 		'<div class="entryTitle">Name:</div><div class="entryField"><input type="text" id="txtTreasureMapName" value="" /></div>';
-$treasureMap .= 		'<div class="entryTitle">Beschreibung:</div><div class="entryText"><textarea id="txtaTreasureMapDescription" class="entryTextarea"></textarea></div>';
-$treasureMap .= 		'<div class="entryTitle">Strasse:</div><div class="entryField"><input type="text" id="txtTreasureMapStreet" value="" /></div>';
-$treasureMap .= 		'<div class="entryTitle">PLZ:</div><div class="entryField"><input type="text" id="txtTreasureMapZipCode" value="" /></div>';
-$treasureMap .= 		'<div class="entryTitle">Ort:</div><div class="entryField"><input type="text" id="txtTreasureMapCity" value="" /></div>';
-$treasureMap .= 		'<div class="entryTitle">';
-$treasureMap .= 			'Land:';
 $treasureMap .= 		'</div>';
-$treasureMap .= 		'<div class="entryField">';
-$treasureMap .= 			'<select id="selTreasureMapCountry">';
+
+$treasureMap .= 		'<div class="col-md-3"><div class="form-group"><label>Name:</label><input type="text" class="form-control" id="txtTreasureMapName" value="" /></div></div>';
+$treasureMap .= 		'<div class="col-md-3"><div class="form-group"><label>Beschreibung:</label><textarea id="txtaTreasureMapDescription" class="entryTextarea form-control"></textarea></div></div>';
+$treasureMap .= 		'<div class="col-md-3"><div class="form-group"><label>Strasse:</label><input type="text" class="form-control" id="txtTreasureMapStreet" value="" /></div></div>';
+$treasureMap .= 		'<div class="col-md-3"><div class="form-group"><label>PLZ:</label><input type="text" class="form-control" id="txtTreasureMapZipCode" value="" /></div></div>';
+$treasureMap .= 		'<div class="col-md-3"><div class="form-group"><label>Ort:</label><input type="text" class="form-control" id="txtTreasureMapCity" value="" /></div></div>';
+$treasureMap .= 		'<div class="col-md-3"><div class="form-group"><label>';
+$treasureMap .= 			'Land:';
+$treasureMap .= 		'</label>';
+$treasureMap .= 		'';
+$treasureMap .= 			'<select id="selTreasureMapCountry" class="form-control">';
 $treasureMap .= 				'<option value="0" selected>-- Bitte ausw&auml;hlen --</option>';
 
 foreach($countryList as $country)
@@ -79,23 +77,27 @@ foreach($countryList as $country)
 
 $treasureMap .= 			'</select>';
 $treasureMap .= 		'</div>';
-$treasureMap .= 		'<div class="entryTitle">Telefon:</div><div class="entryField"><input type="text" id="txtTreasureMapPhone" value="" /></div>';
-$treasureMap .= 		'<div class="entryTitle">Mobile:</div><div class="entryField"><input type="text" id="txtTreasureMapMobile" value="" /></div>';
-$treasureMap .= 		'<div class="entryTitle">Fax:</div><div class="entryField"><input type="text" id="txtTreasureMapFax" value="" /></div>';
-$treasureMap .= 		'<div class="entryTitle">Email:</div><div class="entryField"><input type="text" id="txtTreasureMapEmail" value="" /></div>';
-$treasureMap .= 		'<div class="entryTitle">Website:</div><div class="entryField"><input type="text" id="txtTreasureMapWebsite" value="" /></div>';
-$treasureMap .= 		'<div class="entryTitle">Breitengrad:</div><div class="entryField"><input type="number" id="txtTreasureMapLatitude" step="0.1" value="0" /></div>';
-$treasureMap .= 		'<div class="entryTitle">Längengrad:</div><div class="entryField"><input type="number" id="txtTreasureMapLongitude" step="0.1" value="0" /></div>';
-$treasureMap .= 		'<div id="treasureMapNewEntryOptions">';
-$treasureMap .= 			'<input type="button" class="buttonBigGreen" id="btnAddNewEntry" value="Hinzufügen" />&nbsp;&nbsp;&nbsp;';
-//$treasureMap .= 			'<input type="reset" class="buttonBigRed" id="btnResetNewEntry" value="Leeren" />';
-$treasureMap .= 			'<input type="reset" class="buttonBigRed" value="Leeren" />';
+$treasureMap .= 		'</div>';
+$treasureMap .= 		'<div class="col-md-3"><div class="form-group"><label>Telefon:</label><input type="text" class="form-control" id="txtTreasureMapPhone" value="" /></div></div>';
+$treasureMap .= 		'<div class="col-md-3"><div class="form-group"><label>Mobile:</label><input type="text" class="form-control" id="txtTreasureMapMobile" value="" /></div></div>';
+$treasureMap .= 		'<div class="col-md-3"><div class="form-group"><label>Fax:</label><input type="text" class="form-control" id="txtTreasureMapFax" value="" /></div></div>';
+$treasureMap .= 		'<div class="col-md-3"><div class="form-group"><label>Email:</label><input type="text" class="form-control" id="txtTreasureMapEmail" value="" /></div></div>';
+$treasureMap .= 		'<div class="col-md-3"><div class="form-group"><label>Website:</label><input type="text" class="form-control" id="txtTreasureMapWebsite" value="" /></div></div>';
+$treasureMap .= 		'<div class="col-md-3"><div class="form-group"><label>Breitengrad:</label><input type="number" class="form-control" id="txtTreasureMapLatitude" step="0.1" value="0" /></div></div>';
+$treasureMap .= 		'<div class="col-md-3"><div class="form-group"><label>Längengrad:</label><input type="number" class="form-control" id="txtTreasureMapLongitude" step="0.1" value="0" /></div></div>';
+
+$treasureMap .=  		'<div class="col-md-12 locationsubmitcontrols">';
+$treasureMap .= 			'<div class="col-md-12">';
+$treasureMap .= 				'<div id="treasureMapMessage"></div>';
+$treasureMap .= 			'</div>';
+$treasureMap .= 		'<div class="col-md-12">';
+$treasureMap .=				'<input type="button" class="buttonBigGreen" id="btnAddNewEntry" value="Hinzufügen" />';
+$treasureMap .=				'<input type="reset" class="buttonBigRed" value="Leeren" />';
 $treasureMap .= 		'</div>';
 $treasureMap .= 	'</div>';
+$treasureMap .= 	'</form>';
 $treasureMap .= '</div>';
-$treasureMap .= '</form>';
 $treasureMap .= '<div id="treasureMap"></div>';
-$treasureMap .= '<br /><br />';
 
 $data = array("TreasureMap" => $treasureMap);
 
