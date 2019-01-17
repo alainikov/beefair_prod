@@ -48,6 +48,7 @@ $blog .= 		'</div>';
 $blog .= 	'</section>';*/
 // $blog .= 	'<br /><br />';
 
+$blog .= 		'</div>';
 $data = array("Blog" => $blog);
 
 echo json_encode($data);

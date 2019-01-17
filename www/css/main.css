@@ -12,34 +12,58 @@
 /* Extra small devices (portrait phones, less than 576px)
 // No media query since this is the default in Bootstrap*/
 
+@media (min-width: 360px) 
+{ 
+	#locationDataMain
+	{
+		display: none;
+	}
+	
+	#btnContactSendMail,
+	#btnContactReset
+	{
+		width: 120px;
+	}
+}
+
 /* Small devices (landscape phones, 576px and up)*/
-@media (min-width: 576px) { 
-    .column {
+@media (min-width: 576px) 
+{ 
+    .column 
+	{
         -ms-flex: 100%;
         flex: 100%;
         max-width: 100%;
     }
- }
+	
+	#locationDataMain
+	{
+		display: none;
+	}
+}
 
 /* Medium devices (tablets, 768px and up)*/
-@media (min-width: 768px) { 
-    .column {
+@media (min-width: 768px) 
+{ 
+    .column 
+	{
         -ms-flex: 50%;
         flex: 50%;
         max-width: 50%;
     }
- }
+}
 
 /* Large devices (desktops, 992px and up)*/
-@media (min-width: 992px) { 
+@media (min-width: 992px) 
+{ 
 
- }
+}
 
 /* Extra large devices (large desktops, 1200px and up)*/
-@media (min-width: 1200px) { 
+@media (min-width: 1200px) 
+{ 
 
- }
-
+}
 
 .body
 {
@@ -56,28 +80,11 @@
     padding:1em;
 }
 
-/* #navMain, */
-/* #navContainer */
-/* { */
-    /* width: 100%; */
-    /* color: #000000;  */
-    /* text-align: center; */
-/* } */
-
 #navContainerTop,
 #navBar
 {
     /* text-align: center; */
 }
-
-/*#carouselMain,
-#carouselList,
-#carouselItem,
-#carouselImage,
-#carouselContainer
-{
-   
-}*/
 
 #carouselCaption
 {
@@ -406,148 +413,3 @@ h2 span
     margin: 20px;
     vertical-align: middle;
 }
-/* .row {
-    margin-right:initial;
-} */
-
-/* #### Desktops #### */
-/*@media screen and (min-width: 1024px)
-{
-    #test
-    {
-
-    }
-
-    .body,    
-    #navMain,
-    #navContainer,
-    #navContainerTop,
-    #carouselMain,
-    #carouselList,
-    #carouselItem,
-    #carouselImage,
-    #carouselContainer,
-    #individualMessageMain,
-    #tileViewMain,
-    #honeyBlogMain,
-    #treasureMapMain,
-    #locationDataMain,
-    #wantedPosterMain,
-    #contactFormMain,
-    #aboutUsMain,
-    .row-center
-    {
-        width: 100%;
-        margin: 0 auto;
-    }
-
-    #navBar
-    {
-        width: 100%;    
-    }
-    
-    .row-left, .row-right
-    {
-        display: none;        
-    }
-    
-    .row-3
-    {
-        float: left;
-        width: 100%;
-    }
-}
-*/
-/*@media only screen and (max-width: 768px)
-{
-    #test
-    {
-
-    }
-
-    .body,    
-    #navMain,
-    #navContainer,
-    #navContainerTop,
-    #carouselMain,
-    #carouselList,
-    #carouselItem,
-    #carouselImage,
-    #carouselContainer,
-    #individualMessageMain,
-    #tileViewMain,
-    #honeyBlogMain,
-    #treasureMapMain,
-    #locationDataMain,
-    #wantedPosterMain,
-    #contactFormMain,
-    #aboutUsMain,
-    .row-center
-    {
-        width: 768px;
-        margin: 0 auto;
-    }
-
-    #navBar
-    {
-        width: 100%;    
-    }
-    
-    .row-left, .row-right
-    {
-        display: none;        
-    }
-    
-    .row-3
-    {
-        float: left;
-        width: 100%;
-    }
-}
-
-@media only screen and (max-device-width: 480px)
-{
-    #test
-    {
-
-    }
-
-    .body,    
-    #navMain,
-    #navContainer,
-    #navContainerTop,
-    #carouselMain,
-    #carouselList,
-    #carouselItem,
-    #carouselImage,
-    #carouselContainer,
-    #individualMessageMain,
-    #tileViewMain,
-    #honeyBlogMain,
-    #treasureMapMain,
-    #locationDataMain,
-    #wantedPosterMain,
-    #contactFormMain,
-    #aboutUsMain,
-    .row-center
-    {
-        width: 480px;
-        margin: 0 auto;
-    }
-
-    #navBar
-    {
-        width: 100%;    
-    }
-    
-    .row-left, .row-right
-    {
-        display: none;        
-    }
-    
-    .row-3
-    {
-        float: left;
-        width: 100%;
-    }
-}*/
