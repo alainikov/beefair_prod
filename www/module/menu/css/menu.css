@@ -5,3 +5,13 @@
  * Document:    Menu css
 \******************************************************************************/
 
+.navbar-brand
+{
+	margin: 0;
+	padding: 0;
+}
+
+.navbar-brand > img
+{
+	width: 48px;
+}

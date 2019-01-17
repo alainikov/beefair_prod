@@ -18,15 +18,15 @@ $menu =  	'<div class="container-fluid">';
 $menu .=  		'<nav class="navbar navbar-inverse navbar-static-top">';
 $menu .=  			'<div id="navContainerTop">';
 $menu .=  				'<div class="navbar-header">';
-$menu .=					'<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navBar" aria-expanded="false">
-        <span class="sr-only">Toggle navigation</span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-      </button>';
+$menu .=					'<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navBar" aria-expanded="false">';
+$menu .=					'<span class="sr-only">Toggle navigation</span>';
+$menu .=					'<span class="icon-bar"></span>';
+$menu .=					'<span class="icon-bar"></span>';
+$menu .=					'<span class="icon-bar"></span>';
+$menu .=					'</button>';
 $menu .=  					'<a class="navbar-brand" href="'.$labels["menu"][0]["url"].'">';
-$menu .=  					'<img src="../www/img/logo/logo_transparent.png" width="90"/>';
-$menu .= 				'</a>';
+$menu .=  						'<img src="../www/img/logo/logo_transparent.png" />';
+$menu .= 					'</a>';
 $menu .=  				'</div>';
 $menu .=  				'<div id="navBar" class="navbar-collapse collapse">';
 $menu .=  					'<ul class="nav navbar-nav">';

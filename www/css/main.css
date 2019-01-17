@@ -12,9 +12,21 @@
 /* Extra small devices (portrait phones, less than 576px)
 // No media query since this is the default in Bootstrap*/
 
-@media (min-width: 360px) 
+@media (max-width: 360px) 
 { 
-	#locationDataMain
+	#tileViewMain
+	{
+		height: 300px;
+	}
+	
+	#locationDataTile
+	{
+		visibility: hidden;
+		height: 0px;
+	}
+
+	#locationDataMain,
+	#treasureMapMain
 	{
 		display: none;
 	}
