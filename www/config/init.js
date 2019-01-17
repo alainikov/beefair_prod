@@ -7,7 +7,7 @@
 
 //Service URL
 //PROD
-// var configServiceUrl = "https://beefair.ch/service/";
+var configServiceUrl = "https://beefair.ch/service/";
 //DEBUG
 var configServiceUrl = "service/";
 

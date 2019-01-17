@@ -10,8 +10,8 @@ header('Content-Type: text/html; charset=UTF-8');       //ISO-8859-1
 
 //TODO: language
 $_SESSION["language"] = "de";
-$localModus = false;
-$debugModus = false;
+$localModus = true;
+$debugModus = true;
 $config = array();
 
 //ERROR
