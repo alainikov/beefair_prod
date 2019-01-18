@@ -22,7 +22,7 @@ function initMap()
 	//do init
 }
 
-function showErrorMessage(msg)
+function error(msg)
 {
     var s = document.querySelector('#treasureMapStatus');
     s.innerHTML = typeof msg == 'string' ? msg : "fehlgeschlagen";
@@ -142,16 +142,16 @@ $(document).ready(function()
 
 		if (navigator.geolocation)
 		{
-			navigator.geolocation.getCurrentPosition(showMaps,
-				function(error) 
+			navigator.geolocation.getCurrentPosition(showMaps, error);
+				/*function(error) 
 				{ 
 					callDialog();
 				}
-			);
+			);*/
 		} 
-		else 
+		else
 		{
-			showErrorMessage('nicht unterstützt');
+			error('nicht unterstützt');
 		}
 
 		/*var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
@@ -261,7 +261,7 @@ $(document).ready(function()
 					treasureMapShowNewEntry();
 				}).error(function()
 				{ 
-					showErrorMessage(); 
+					error(); 
 				});
 			}
 			else
@@ -272,6 +272,6 @@ $(document).ready(function()
 		});
 	}).error(function()
 	{ 
-		showErrorMessage(); 
+		error(); 
 	});
 });
