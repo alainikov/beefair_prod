@@ -10,8 +10,8 @@ header('Content-Type: text/html; charset=UTF-8');       //ISO-8859-1
 
 //TODO: language
 $_SESSION["language"] = "de";
-$localModus = true;
-$debugModus = true;
+$localModus = false;
+$debugModus = false;
 $config = array();
 
 //ERROR
@@ -39,10 +39,10 @@ if ($localModus)
 else
 {
 	//PROD
-	$config["mysql"]["host"] = "alainger.mysql.db.internal"; 		//"127.0.0.3";
-	$config["mysql"]["id"] = "alainger_bf"; 						//"db307555_627";
+	$config["mysql"]["host"] = "alainger.mysql.db.internal";
+	$config["mysql"]["id"] = "alainger_bf";
 	$config["mysql"]["pw"] = "sfzW_ud1M";
-	$config["mysql"]["db"] = "alainger_bf";  						//"db307555_627";
+	$config["mysql"]["db"] = "alainger_bf";
 	$config["mysql"]["charset"] = "utf8";
 }
 

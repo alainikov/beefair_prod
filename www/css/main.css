@@ -381,7 +381,6 @@ h2 span
 	}
 
 	#locationDataMain
-	/*#treasureMapMain*/
 	{
 		display: none;
 	}
@@ -404,11 +403,6 @@ h2 span
         flex: 100%;
         max-width: 100%;
     }
-	
-	#locationDataMain
-	{
-		display: none;
-	}
 }
 
 /* Medium devices (tablets, 768px and up)*/

@@ -25,7 +25,7 @@ $menu .=					'<span class="icon-bar"></span>';
 $menu .=					'<span class="icon-bar"></span>';
 $menu .=					'</button>';
 $menu .=  					'<a class="navbar-brand" href="'.$labels["menu"][0]["url"].'">';
-$menu .=  						'<img src="../www/img/logo/logo_transparent.png" />';
+$menu .=  						'<img src="img/logo/logo_transparent.png" />';
 $menu .= 					'</a>';
 $menu .=  				'</div>';
 $menu .=  				'<div id="navBar" class="navbar-collapse collapse">';
