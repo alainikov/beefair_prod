@@ -5,44 +5,16 @@
  * Document:    treasureMap js
 \******************************************************************************/
 
-function treasureMapMainSetHeight(newMainHeight)
-{
-	// document.getElementById('treasureMapMain').style.height = newMainHeight + "px";
-}
-
 function treasureMapShowNewEntry()
 {
-	// var newTopHeight = document.getElementById('treasureMapTop').offsetHeight;
-	// var newOptionsHeight = treasureMapOptionsHeight;
-	
 	if (document.getElementById('treasureMapNewEntry').style.display == "block")
 	{
 		document.getElementById('treasureMapNewEntry').style.display = "none";
 	}
 	else
 	{
-		// newOptionsHeight += treasureMapNewEntryHeight;
 		document.getElementById('treasureMapNewEntry').style.display = "block";
 	}
-	
-	// var newMainHeight = treasureMapMainHeight + newTopHeight + newOptionsHeight;
-	
-	//MBA unneeded code
-	//document.getElementById('treasureMapOptions').style.height = newOptionsHeight + "px";
-	//treasureMapMainSetHeight(newMainHeight);
-}
-
-function treasureMapMessageSetHeight(newMessageHeight)
-{
-	//MBA unneeded code
-	// var newTopHeight = treasureMapTopHeight + newMessageHeight;
-	// var newOptionsHeight = document.getElementById('treasureMapOptions').offsetHeight;
-	// var newMainHeight = treasureMapMainHeight + newTopHeight + newOptionsHeight;
-	
-	
-	// document.getElementById('treasureMapMessage').style.height = newMessageHeight + "px";
-	// document.getElementById('treasureMapTop').style.height = newTopHeight + "px";
-	//treasureMapMainSetHeight(newMainHeight);
 }
 
 function initMap()
@@ -50,7 +22,7 @@ function initMap()
 	//do init
 }
 
-function error(msg)
+function showErrorMessage(msg)
 {
     var s = document.querySelector('#treasureMapStatus');
     s.innerHTML = typeof msg == 'string' ? msg : "fehlgeschlagen";
@@ -138,14 +110,31 @@ function showMaps(position)
 	});
 }
 
+function callDialog()
+{
+	document.addEventListener("deviceready",function()
+	{
+		cordova.dialogGPS("Your GPS is Disabled, this app needs to be enable to works.",		//message
+			"Use GPS, with wifi or 3G.",														//description
+			function(buttonIndex)																//callback
+			{
+				switch(buttonIndex)
+				{
+					case 0: break;			//cancel
+					case 1: break;			//neutro option
+					case 2: break;			//user go to configuration
+				}
+			},
+			"Please Turn on GPS",			//title
+			["Cancel","Later","Go"]);		//buttons
+	});
+}
+
 $(document).ready(function()
 {
 	$.getJSON(configServiceUrl + "getTreasureMap.php", function (data)
 	{
-		$('#treasureMapMain').html(data.TreasureMap);
-		
-		treasureMapMessageSetHeight(treasureMapMessageHeight);
-	
+		$('#treasureMapMain').html(data.TreasureMap);	
 		$("#btnShowNewEntry").click(function()
 		{
 			treasureMapShowNewEntry();
@@ -153,11 +142,16 @@ $(document).ready(function()
 
 		if (navigator.geolocation)
 		{
-			navigator.geolocation.getCurrentPosition(showMaps, error);
+			navigator.geolocation.getCurrentPosition(showMaps,
+				function(error) 
+				{ 
+					callDialog();
+				}
+			);
 		} 
 		else 
 		{
-			error('nicht unterstützt');
+			showErrorMessage('nicht unterstützt');
 		}
 
 		/*var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
@@ -264,22 +258,20 @@ $(document).ready(function()
 					
 					treasureMapMessage += "<br />";			
 					$("#treasureMapMessage").html(treasureMapMessage);					
-					treasureMapMessageSetHeight(newTreasureMapMessageHeight);
 					treasureMapShowNewEntry();
 				}).error(function()
 				{ 
-					error(); 
+					showErrorMessage(); 
 				});
 			}
 			else
 			{
 				treasureMapMessage += "<br />";			
 				$("#treasureMapMessage").html(treasureMapMessage);
-				treasureMapMessageSetHeight(newTreasureMapMessageHeight);
 			}
 		});
 	}).error(function()
 	{ 
-		error(); 
+		showErrorMessage(); 
 	});
 });
