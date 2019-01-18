@@ -31,7 +31,7 @@ $(document).ready(function()
 {
 	//set top button
 	var back_to_top_button = ['<a href="#top" class="back-to-top"><img src="img/icons/arrow_top.png" width="48px" alt="Nach oben"></a>'].join("");
-	$("body").append(back_to_top_button);
+	$("#backToTop").append(back_to_top_button);
 	$(".back-to-top").hide();
 
 	//function for scrolling

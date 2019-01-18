@@ -14,7 +14,6 @@
 
 #treasureMapOptions
 {
-	/* height: 60px; */
 	color: #000000;
 	background-color: #FFFFFF;
 	text-align: center;
@@ -26,10 +25,7 @@
 
 #treasureMapAddNewEntry
 {
-	/* height: 60px; */
 	padding: 10px 0px 10px 0px;
-    /* margin-left: auto;
-    margin-right: auto; */
 }
 
 #treasureMapNewEntry
@@ -49,6 +45,13 @@
 {
     height: 900px;
 	margin-top: 20px;
-    /* margin-left: auto;
-    margin-right: auto; */
+}
+
+/*small devices (vertical phone, 375 and up */
+@media (max-width: 375px)
+{
+	#treasureMapNewEntry
+	{
+		height: 1290px;
+	}
 }

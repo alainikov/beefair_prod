@@ -9,74 +9,6 @@
  * HOME
 \******************************************************************************/
 
-/* Extra small devices (portrait phones, less than 576px)
-// No media query since this is the default in Bootstrap*/
-
-@media (max-width: 360px) 
-{ 
-	#tileViewMain
-	{
-		height: 300px;
-	}
-	
-	#locationDataTile
-	{
-		visibility: hidden;
-		height: 0px;
-	}
-
-	#locationDataMain,
-	#treasureMapMain
-	{
-		display: none;
-	}
-	
-	#btnContactSendMail,
-	#btnContactReset
-	{
-		width: 120px;
-	}
-}
-
-/* Small devices (landscape phones, 576px and up)*/
-@media (min-width: 576px) 
-{ 
-    .column 
-	{
-        -ms-flex: 100%;
-        flex: 100%;
-        max-width: 100%;
-    }
-	
-	#locationDataMain
-	{
-		display: none;
-	}
-}
-
-/* Medium devices (tablets, 768px and up)*/
-@media (min-width: 768px) 
-{ 
-    .column 
-	{
-        -ms-flex: 50%;
-        flex: 50%;
-        max-width: 50%;
-    }
-}
-
-/* Large devices (desktops, 992px and up)*/
-@media (min-width: 992px) 
-{ 
-
-}
-
-/* Extra large devices (large desktops, 1200px and up)*/
-@media (min-width: 1200px) 
-{ 
-
-}
-
 .body
 {
     font-family: sans-serif;
@@ -224,6 +156,10 @@
 	white-space: nowrap;
 	vertical-align: middle;
 	touch-action: manipulation;
+	margin-left: 10px;
+    margin-right: 10px;
+    margin-top: 5px;
+    margin-bottom: 5px;
 }
 
 .buttonBigYellow:hover
@@ -252,6 +188,10 @@
 	white-space: nowrap;
 	vertical-align: middle;
 	touch-action: manipulation;
+	margin-left: 10px;
+    margin-right: 10px;
+    margin-top: 5px;
+    margin-bottom: 5px;
 }
 
 .buttonBigBlue:hover
@@ -280,8 +220,8 @@
 	white-space: nowrap;
 	vertical-align: middle;
     touch-action: manipulation;
-    margin-left: 20px;
-    margin-right: 20px;
+    margin-left: 10px;
+    margin-right: 10px;
     margin-top: 5px;
     margin-bottom: 5px;
 }
@@ -312,8 +252,8 @@
 	white-space: nowrap;
 	vertical-align: middle;
     touch-action: manipulation;
-    margin-left: 20px;
-    margin-right: 20px;
+    margin-left: 10px;
+    margin-right: 10px;
     margin-top: 5px;
     margin-bottom: 5px;
 }
@@ -424,4 +364,72 @@ h2 span
 .column img {
     margin: 20px;
     vertical-align: middle;
+}
+
+/*small devices (vertical phone, 375 and up */
+@media (max-width: 375px)
+{  
+	#tileViewMain
+	{
+		height: 300px;
+	}
+	
+	#locationDataTile
+	{
+		visibility: hidden;
+		height: 0px;
+	}
+
+	#locationDataMain
+	/*#treasureMapMain*/
+	{
+		display: none;
+	}
+	
+	#btnAddNewEntry,
+	#btnResetNewEntry,
+	#btnContactSendMail,
+	#btnContactReset
+	{
+		width: 120px;
+	}
+}
+
+/* Small devices (landscape phones, 576px and up)*/
+@media (min-width: 576px) 
+{ 
+    .column 
+	{
+        -ms-flex: 100%;
+        flex: 100%;
+        max-width: 100%;
+    }
+	
+	#locationDataMain
+	{
+		display: none;
+	}
+}
+
+/* Medium devices (tablets, 768px and up)*/
+@media (min-width: 768px) 
+{ 
+    .column 
+	{
+        -ms-flex: 50%;
+        flex: 50%;
+        max-width: 50%;
+    }
+}
+
+/* Large devices (desktops, 992px and up)*/
+@media (min-width: 992px) 
+{ 
+
+}
+
+/* Extra large devices (large desktops, 1200px and up)*/
+@media (min-width: 1200px) 
+{ 
+
 }
