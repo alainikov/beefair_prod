@@ -57,8 +57,8 @@
 	<plugin name="cordova-plugin-media" source="npm" spec="1.0.1" />
 	<plugin name="cordova-plugin-network-information" source="npm" spec="1.0.1" />
 	<plugin name="cordova-plugin-whitelist" source="npm" spec="1.0.0" />	
-	<plugin name="cordova-plugin-geolocation" version="2.1.0" />
-	<plugin name="cordova-dialog-gps" version="0.0.2" />
+	<plugin name="cordova-plugin-geolocation" source="npm" version="2.1.0" />
+	<plugin name="cordova-dialog-gps" source="npm" version="1.0.0" />
 	<!-- /PLUGINS -->
 	
 	<!-- WHITELIST -->
