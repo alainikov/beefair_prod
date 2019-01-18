@@ -33,24 +33,29 @@ $menu .=  					'<ul class="nav navbar-nav">';
 
 for ($i = 1; $i < count($labels["menu"]); $i++)
 {
-	if (count($labels["menu"][$i]) > 2)
+	$j = 0;
+	
+	if (array_key_exists($j, $labels["menu"][$i]))
 	{
 		$menu .=  				'<li class="dropdown">';
-		$menu .=  					'<a href="#'.$labels["menu"][$i]["url"].'" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">';
+		$menu .=  					'<a href="'.$labels["menu"][$i]["url"].'" id="'.$labels["menu"][$i]["id"].'" data-toggle="dropdown">';
 		$menu .=  						$labels["menu"][$i]["name"].'&nbsp;<span class="caret"></span></a>';
-		$menu .=  					'<ul class="dropdown-menu">';
+		$menu .=  						'<ul class="dropdown-menu" role="menu" aria-labelledby="'.$labels["menu"][$i]["id"].'">';
 
-		for ($j = 1; $j < count($labels["menu"][$i]); $j++)
+		while (array_key_exists($j, $labels["menu"][$i]))			
 		{
-			$menu .=  					'<li><a href="'.$labels["menu"][$i][$j]["url"].'">'.$labels["menu"][$i][$j]["name"].'</a></li>';
+			$menu .=  						'<li role="presentation"><a role="menuitem" tabindex="-1" href="'.$labels["menu"][$i][$j]["url"].'" id="'.$labels["menu"][$i][$j]["id"].'">'.$labels["menu"][$i][$j]["name"].'</a></li>';
+			$j++;
 		}
 
-		$menu .=  					'</ul>';
+		$menu .=  						'</ul>';
 		$menu .=  				'</li>';
 	}
-	elseif (count($labels["menu"][$i]) == 2)
+	else
 	{
-		$menu .=  				'<li><a href="'.$labels["menu"][$i]["url"].'">'.$labels["menu"][$i]["name"].'</a></li>';
+		$menu .=  				'<li>';
+		$menu .=  					'<a href="'.$labels["menu"][$i]["url"].'" id="'.$labels["menu"][$i]["id"].'">'.$labels["menu"][$i]["name"].'</a>';
+		$menu .=  				'</li>';
 	}
 }
 

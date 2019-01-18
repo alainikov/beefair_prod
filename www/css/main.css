@@ -380,6 +380,7 @@ h2 span
 		height: 0px;
 	}
 
+	#menuLocationDataMain,
 	#locationDataMain
 	{
 		display: none;
